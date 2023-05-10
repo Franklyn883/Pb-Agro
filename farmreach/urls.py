@@ -1,6 +1,8 @@
 from django.urls import path
 from . import views
 
-urlpattherns = [
-    
+app_name = 'farmreach'
+
+urlpatterns = [
+    path('', views.home),
 ]
