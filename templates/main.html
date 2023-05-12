@@ -2,19 +2,46 @@
 {% load static %}
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Pb-Agro</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
   </head>
   <body>
-  {% include 'navbar.html' %}
+    {% include 'navbar.html' %}
     <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
     <![endif]-->
-    
-    {% comment %} <script src="" async defer></script> {% endcomment %}
+    <div
+      class="hero-section"
+      style="
+        background-image: url('{% static 'images/aboutus-banner.jpeg' %}');
+        background-size: cover;
+        background-repeat: repeat;
+        backgroun-position: center;
+        background-blend-mode: multiply;
+      "
+    >
+      <div class="hero-content">
+        <h1>Goat Farm</h1>
+        <p>Enjoy an ROI of up to 50%</p>
+      </div>
+    </div>
+    <div class="about-us">
+    <h2>About us</h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque eu ligula eget</p>
+     <p>consectetur. Nulla malesuada sapien sodales metus viverra, nec suscipit nisi egestas. Duis feugiat </p>
+     turpis ut dui gravida lacinia. In pretium cursus congue. Nunc molli
+     <p>ex eu efficitur molestie, lacus lacus tincidunt nisi, non efficitur quam felis placerat.</p>
+    </div>
+
+    {% comment %}
+    <script src="" async defer></script>
+    {% endcomment %}
   </body>
 </html>

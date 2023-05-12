@@ -1,12 +1,14 @@
+
 :root {
   --color-main: #3b7d41;
   --color-caramel: #c27d3c;
   --color-dark-blue: #1e2833;
   --color-white: #ffffff;
-  --color-main-dark: #335436;
-  --color-main-light: #40bb49fd;
+  --color-main-dark: #49f162;
+  --color-main-light: #b7f1bbb0;
   --color-grey: #bdb9b9;
   --color-hover:#ca996b;
+  --color-light-gray: #b2bdbd;
 }
 * {
   margin: 0;
@@ -85,6 +87,8 @@ svg::before {
   padding: 1em 2em;
   border-radius: 12px;
   margin-left: 5rem;
+  font-size: 1rem;
+  flex: 1;
 }
 #sign-up:hover,
 #sign-up:active{
@@ -97,4 +101,45 @@ svg::before {
 .nav-item:hover,
 .nav-item:active{
   border-bottom: 4px solid var(--color-caramel);
+}
+.hero-section{
+  height: 80vh;
+  background-color:var(--color-main-light) ;
+  color: var(--color-white);
+}
+.hero-content{
+padding: 80px 4rem;
+color: #fff; /* set text color to white */
+text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #fff
+}
+.hero-content p{
+  font-size: 4rem;
+}
+.hero-content h1{
+  font-size: 6rem;
+  font-weight: bolder;
+  color: var(--color-caramel);
+}
+#about-signup{
+ font-size: 1.2rem;
+ background-color: var(--color-caramel);
+ padding: 1rem 1.5rem;
+ border-radius: 12px;
+ margin-top: 12px;
+}
+
+.about-us{
+background-color: var(--color-main-light);
+padding:150px 60px;
+line-height: 1.5;
+}
+.about-us h2{
+  margin-top:150px 60px;
+  margin: 32px 0;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+.about-us p{
+  text-align: justify;
+  font-size: 1.2rem;
 }
